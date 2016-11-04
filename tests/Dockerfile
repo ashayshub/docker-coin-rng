@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @ahsanali
- Watch 35
-  Star 285
- Fork 133 docker-library/python
- Code  Issues 14  Pull requests 1  Projects 0  Pulse  Graphs
-Tree: 855b85c830 Find file Copy pathpython/2.7/Dockerfile
-855b85c  on Aug 19
-@tianon tianon Add "--force-reinstall" and a comment as to why to our "pip install" …
-7 contributors @tianon @Moghedrin @mattrobenolt @yosifkit @jstewmon @Starefossen @sukrit007
-RawBlameHistory     
-71 lines (62 sloc)  2.66 KB
 FROM buildpack-deps:jessie
 
 # ensure local python is preferred over distribution python
@@ -85,5 +68,3 @@ RUN set -ex \
 RUN pip install --no-cache-dir virtualenv
 
 CMD ["python2"]
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
