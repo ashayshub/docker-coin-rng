@@ -2,6 +2,7 @@ import urllib2
 
 
 def test_index(base_url):
+	"Make sure the site is up"
     assert 200 == urllib2.urlopen('{0}/'.format(base_url)).getcode()
 
 def test_random_bytes(base_url):
