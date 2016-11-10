@@ -65,6 +65,6 @@ RUN set -ex \
 	&& rm -rf /usr/src/python ~/.cache
 
 # install "virtualenv", since the vast majority of users of this image will want it
-RUN pip install --no-cache-dir virtualenv pytest pytest-base-url
+RUN pip install --no-cache-dir virtualenv
 
 CMD ["python2"]
