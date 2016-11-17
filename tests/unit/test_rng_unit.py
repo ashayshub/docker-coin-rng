@@ -6,9 +6,10 @@ from rng import rng
 
 @pytest.fixture
 def client(request):
-    rng.app.config['TESTING'] = True
-    client = rng.app.test_client()
-    return client
+	"""Client to use in tests"""
+	rng.app.config['TESTING'] = True
+	client = rng.app.test_client()
+	return client
 
 def test_rng(client):
     """Start with a blank database."""
