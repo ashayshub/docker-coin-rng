@@ -2,7 +2,7 @@
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Hello World ECS Application service Task",
   "Parameters": {
-    "Env": {
+    "ENV": {
       "Description": "Deploy Environment, e.g. dev, prod, uat, test",
       "Type": "String",
       "Default": "dev"
@@ -175,7 +175,7 @@
             "Essential": true,
             "PortMappings": [
               {
-                "ContainerPort": 11000,
+                "ContainerPort": 80,
                 "HostPort": 0
               }
             ],
