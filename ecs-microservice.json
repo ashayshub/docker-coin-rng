@@ -187,13 +187,14 @@
             "Command": [],
             "Memory": 512,
             "Cpu": 20,
-            "DockerLabels":{
-              "SERVICE_NAME": {"Ref":"ServiceName"}
-            },
             "Environment":[
               {
                 "Name": "ENV",
                 "Value": {"Ref":"ENV"}
+              },
+              {
+                "Name": "SERVICE_NAME",
+                "Value": {"Ref":"ServiceName"}
               }
             ]
           }
