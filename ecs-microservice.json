@@ -190,9 +190,12 @@
             "DockerLabels":{
               "SERVICE_NAME": {"Ref":"ServiceName"}
             },
-            "Environment":{
-              "ENV": {"Ref":"ENV"}
-            }
+            "Environment":[
+              {
+                "Name": "ENV",
+                "Value": {"Ref":"ENV"}
+              }
+            ]
           }
         ]
       }
