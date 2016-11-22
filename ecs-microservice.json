@@ -23,6 +23,11 @@
       "Default": "",
       "Type": "String",
       "Description": "Resources Services Stack Name"
+    },
+    "ServiceName":{
+      "Default": "",
+      "Type": "String",
+      "Description": "Name of the service to be used in service discovery"
     }
   },
   "Mappings": {
@@ -168,7 +173,7 @@
                 }
               }
             },
-            "Name": "microservice",
+            "Name": "docker-coin-rng",
             "Image": {
               "Ref": "serviceDockerImageURL"
             },
@@ -181,7 +186,13 @@
             ],
             "Command": [],
             "Memory": 512,
-            "Cpu": 20
+            "Cpu": 20,
+            "DockerLabels":{
+              "SERVICE_NAME": {"Ref":"ServiceName"},
+            },
+            "Environment":{
+              "ENV": {"Ref":"ENV"}
+            }
           }
         ]
       }
