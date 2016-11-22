@@ -28,6 +28,11 @@
       "Default": "",
       "Type": "String",
       "Description": "Name of the service to be used in service discovery"
+    },
+    "ServiceVersion": {
+      "Default": "1.1.1",
+      "Type": "String",
+      "Description": "Version of the service to be used in service discovery"
     }
   },
   "Mappings": {
@@ -195,6 +200,10 @@
               {
                 "Name": "SERVICE_NAME",
                 "Value": {"Ref":"ServiceName"}
+              },
+              {
+                "Name": "SERVICE_TAGS",
+                "Value": {"Ref":"ServiceVersion"}
               }
             ]
           }
