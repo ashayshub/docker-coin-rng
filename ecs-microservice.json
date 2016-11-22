@@ -32,7 +32,7 @@
     "ServiceVersion": {
       "Default": "1.1.1",
       "Type": "String",
-      "Description": "Version of the service to be used in service discovery "
+      "Description": "Version of the service to be used in service discovery"
     }
   },
   "Mappings": {
