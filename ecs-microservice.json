@@ -24,7 +24,7 @@
       "Type": "String",
       "Description": "Resources Services Stack Name"
     },
-    "ServiceName":{
+    "ServiceName": {
       "Default": "",
       "Type": "String",
       "Description": "Name of the service to be used in service discovery"
@@ -188,7 +188,7 @@
             "Memory": 512,
             "Cpu": 20,
             "DockerLabels":{
-              "SERVICE_NAME": {"Ref":"ServiceName"},
+              "SERVICE_NAME": {"Ref":"ServiceName"}
             },
             "Environment":{
               "ENV": {"Ref":"ENV"}
